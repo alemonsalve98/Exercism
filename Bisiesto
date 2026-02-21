@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class AnioBisiesto {
+    public static void main(String[] args) {
+        System.out.println("*** Prueba del año bisiesto***");
+
+        var consola = new Scanner(System.in);
+
+        System.out.println("Ingrese por favor el año");
+
+        var anio = consola.nextInt();
+
+        if(anio % 4 == 0 && anio % 400 == 0  ){
+            System.out.println(anio + ": Es un año bisiesto ");
+        }else{
+            System.out.println(anio + ": No es un año bisiesto");
+        }
+    }
+}
